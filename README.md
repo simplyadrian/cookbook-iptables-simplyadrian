@@ -1,4 +1,4 @@
-iptables-nativex Cookbook
+iptables-simplyadrian Cookbook
 =========================
 This cookbook sets up iptable chain rules for host level firewall per security best practices. This cookbook is designed to be extensible and additional recipes should be built to create a firewall for new roles or services. i.e. web servers, securing ssh, privoxy servers, etc..
 
@@ -10,7 +10,7 @@ Requirements
 
 Attributes
 ----------
-#### iptables-nativex::default
+#### iptables-simplyadrian::default
 <table>
   <tr>
     <th>Key</th>
@@ -19,19 +19,19 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['iptables-nativex']['privoxy']['addresses']</tt></td>
+    <td><tt>['iptables-simplyadrian']['privoxy']['addresses']</tt></td>
     <td>String</td>
     <td>the CIDR or CIDR's you wish to use to retrict iptables further </td>
     <td><tt>empty? utilizing the all_privoxy templates</tt></td>
   </tr>
   <tr>
-    <td><tt>['iptables-nativex']['ssh']['addresses']</tt></td>
+    <td><tt>['iptables-simplyadrian']['ssh']['addresses']</tt></td>
     <td>String</td>
     <td>the CIDR or CIDR's you wish to use to retrict iptables further </td>
     <td><tt>empty? utilizing the all_ssh templates</tt></td>
   </tr>
   <tr>
-    <td><tt>['iptables-nativex']['web']['addresses']</tt></td>
+    <td><tt>['iptables-simplyadrian']['web']['addresses']</tt></td>
     <td>String</td>
     <td>the CIDR or CIDR's you wish to use to retrict iptables further </td>
     <td><tt>empty? utilizing the all_http and all_https templates</tt></td>
@@ -40,46 +40,46 @@ Attributes
 
 Usage
 -----
-#### iptables-nativex::default
+#### iptables-simplyadrian::default
 
-To restrict with all current recipes just include `iptables-nativex` in your node's `run_list`:
+To restrict with all current recipes just include `iptables-simplyadrian` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[iptables-nativex]"
+    "recipe[iptables-simplyadrian]"
   ]
 }
 ```
 
-To configure iptables to allow for the privoxy service include `iptables-nativex::privoxy` in your node's `run_list`:
+To configure iptables to allow for the privoxy service include `iptables-simplyadrian::privoxy` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[iptables-nativex::privoxy]"
+    "recipe[iptables-simplyadrian::privoxy]"
     ]
 }
 ```
-To configure iptables to allow for the ssh service include `iptables-nativex::ssh` in your node's `run_list`:
+To configure iptables to allow for the ssh service include `iptables-simplyadrian::ssh` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[iptables-nativex::ssh]"
+    "recipe[iptables-simplyadrian::ssh]"
     ]
 }
 ```
-To configure iptables to allow for the web service on both ports 80 and 443 include `iptables-nativex::web` in your node's `run_list`:
+To configure iptables to allow for the web service on both ports 80 and 443 include `iptables-simplyadrian::web` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[iptables-nativex::web]"
+    "recipe[iptables-simplyadrian::web]"
     ]
 }
 ```

@@ -1,2 +1,2 @@
 # Privoxy Allowed Networks (IP/NETMASK)
-default['iptables-nativex']['privoxy']['addresses'] = Array.new
+default['iptables-simplyadrian']['privoxy']['addresses'] = Array.new

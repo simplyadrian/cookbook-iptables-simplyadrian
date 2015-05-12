@@ -1,2 +1,2 @@
 # Web Traffic Allowed Networks (IP/NETMASK)
-default['iptables-nativex']['web']['addresses'] = Array.new
+default['iptables-simplyadrian']['web']['addresses'] = Array.new

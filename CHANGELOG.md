@@ -1,11 +1,11 @@
-iptables-nativex CHANGELOG
+iptables-simplyadrian CHANGELOG
 ==========================
 
-This file is used to list changes made in each version of the iptables-nativex cookbook.
+This file is used to list changes made in each version of the iptables-simplyadrian cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of iptables-nativex
+- [your_name] - Initial release of iptables-simplyadrian
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

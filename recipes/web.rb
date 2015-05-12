@@ -1,14 +1,14 @@
 #
-# Cookbook Name:: iptables-nativex
+# Cookbook Name:: iptables-simplyadrian
 # Recipe:: web.rb
 #
-# Copyright 2014, NativeX
+# Copyright 2014, simplyadrian
 #
 # All rights reserved - Do Not Redistribute
 #
 
 # Have we decided to lock down the node?
-if node['iptables-nativex']['web']['addresses'].empty?
+if node['iptables-simplyadrian']['web']['addresses'].empty?
   # Use the all_ rules
   iptables_rule "all_http"
   iptables_rule "all_https"

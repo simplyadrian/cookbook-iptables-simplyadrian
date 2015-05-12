@@ -1,14 +1,14 @@
 #
-# Cookbook Name:: iptables-nativex
+# Cookbook Name:: iptables-simplyadrian
 # Recipe:: privoxy.rb
 #
-# Copyright 2014, NativeX
+# Copyright 2014, simplyadrian
 #
 # All rights reserved - Do Not Redistribute
 #
 
 # Have we decided to lock down the node?
-if node['iptables-nativex']['privoxy']['addresses'].empty?
+if node['iptables-simplyadrian']['privoxy']['addresses'].empty?
   # Use the all_privoxy rule
   iptables_rule "all_privoxy"
   # Disable the network privoxy rule
